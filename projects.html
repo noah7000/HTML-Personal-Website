@@ -14,14 +14,7 @@ File purpose: creates projects page
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <ul id="nav">
-            <li id ="name"><span style="color:aquamarine">N</span>oah.</li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="home.html">Home</a></li>
-        </ul>
+        <nav id = navBar></nav>
 
         <h1>Projects</h1>
         
@@ -30,14 +23,23 @@ File purpose: creates projects page
         <hr>
         <br>
         <!--Numbered list for the different projects-->
-        <ol type="1">
+        <ol class="content" type="1">
+            <li class="numbered">
+                <span style="color:aquamarine"><strong>JavaScript Todo List</strong></span><br>
+                <a href="todo/todo.html">Demo</a>
+            </li>
+        </ol>
+
+        <br>
+
+        <ol class="content" type="1" start="2">
             <li class="numbered">
                 <span style="color:aquamarine"><strong>Call Sheet Generator</strong></span><br>
                 <i>Agile Team Member</i>
             </li>
         </ol>
 
-        <ul class="bullet">
+        <ul class="content">
             <li>
                 Developing an online tool for Huntington University Film department to generate actor call sheets.   
             </li>
@@ -46,49 +48,6 @@ File purpose: creates projects page
             </li>
         </ul>
 
-        <br>
-
-        <ol type="1" start="2">
-            <li class="numbered">
-                <span style="color:aquamarine"><strong>Four Year Student Planner</strong></span><br>
-                <i>Agile Team Member</i>
-            </li>
-        </ol>
-
-        <ul class="bullet">
-            <li>
-                Initiating Agile Team development of an online tool for Bethel University Computer Science department.   
-            </li>
-            <li>
-                Designing a web application to aid students in drafting their course plan to enhance the advising process.   
-            </li>
-
-            <li>
-                Creating a website using HTML, CSS, JavaScript, PHP, and an Oracle database.   
-            </li>
-
-            <li>
-                Engaging in Agile processes such as daily standups, sprint planning, and retrospectives.    
-            </li>
-        </ul>
-
-        <br>
-
-        <ol type="1" start="3">
-            <li class="numbered">
-                <span style="color:aquamarine"><strong>Data Structures Java Assignment</strong></span><br>
-                <i>Solo Project</i>
-            </li>
-        </ol>
-
-        <ul class="bullet">
-            <li>
-                Implementing a blocking queue and multithreading to efficiently grade exam objects.    
-            </li>
-            <li>
-                Employing object-oriented programming for exam and question objects, calculating average score and 
-                standard deviation.   
-            </li>
-        </ul>
+        <script src="index.js"></script>
     </body>
 </html>
