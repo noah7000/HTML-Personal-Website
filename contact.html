@@ -14,14 +14,7 @@ File purpose: Creates contact page
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <ul id="nav">
-            <li id ="name"><span style="color:aquamarine">N</span>oah.</li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="home.html">Home</a></li>
-        </ul>
+        <nav id = navBar></nav>
 
         <h1>Contact</h1>
 
@@ -30,7 +23,11 @@ File purpose: Creates contact page
         </h2>
         <hr>
 
-        <form action="https://www.w3schools.com/action_page.php" method="post"> 
+        <form 
+            name = "contact" 
+            action = "https://www.w3schools.com/action_page.php" 
+            onsubmit = "return validateForm()"
+            method = "post"> 
 
             <!--Text Boxes-->
             <label for="fname">First name:</label>
@@ -46,7 +43,7 @@ File purpose: Creates contact page
             <input type="text" id="phone" name="phone" placeholder="1234567890" size="15"><br><br><br>
 
             <!--Radio buttons-->
-            <label>Are you a hiring recuiter?</label><br><br>
+            <label>Are you a hiring recruiter?</label><br><br>
             <label for="yes">
                 <input type="radio" id="yes"  name="radio" value="Yes"> 
                 <span>Yes</span>
@@ -60,7 +57,7 @@ File purpose: Creates contact page
             <!--Checkboxes-->
             <label>Where did you hear about me?</label><br><br>
             <label for="resume">
-                <input type="checkbox" id="resume" name="checkbox" value="Job Application">
+                <input type="checkbox" id="resume" name="resume" value="resume">
                 <span>Resume</span>
             </label><br><br>
 
@@ -75,7 +72,7 @@ File purpose: Creates contact page
             </label><br><br><br>
 
             <!--Select menu-->
-            <label for="select">How would you describe your experinece this site?</label><br><br>
+            <label for="select">How would you describe your experience of this site?</label><br><br>
 
             <select id="select" name="rating">
                 <option value=" ">Choose</option>
@@ -91,5 +88,6 @@ File purpose: Creates contact page
             <!--Submit Button-->
             <input type="submit" value="Submit">
         </form>
+        <script src="index.js"></script>
     </body>
 </html>
